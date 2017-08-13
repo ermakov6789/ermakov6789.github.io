@@ -9,10 +9,10 @@
         <header class="main-header">
             <div class="header-top">
                 <a class="main-header-logo">
-                    <h1>Техномарт</h1>
+                    <span class="logo-content">Логотип Техномарт</span>
                 </a>
                 <form class="main-header-search" action="https://echo.htmlacademy.ru" method="post">
-                        <input class="search-icon" type="search" name="search" value="" placeholder="Поиск:">
+                    <input class="search-icon" type="search" name="search" value="" placeholder="Поиск:">
                 </form>
                 <ul class="header-top-navigation">
                     <li class="bookmarks-link"><a href="#">Закладки</a></li>
@@ -43,9 +43,47 @@
                 </ul>
             </nav>
         </header>
+
         <main class="container">
+            <h1 class="visually-hidden">Интернет-магазин строительных материалов и инструментов для ремонта Техномарт</h1>
+            <!--СОДЕРЖИМОЕ БЛОКА GOODS-AND-SERVICES ЛУЧШЕ РАЗМЕТИТЬ СПИСКОМ?-->
             <section class="goods-and-services">
-                <section class="materials">
+                <ul class="goods-and-services-list">
+                    <li class="materials">
+                        <h3>Материалы</h3>
+                        <a class="goods-btn" href="#">На любой вкус</a>
+                    </li>
+                    <li class="tool">
+                        <h3>Инструмент</h3>
+                        <a class="goods-btn" href="#">На все случаи</a>
+                    </li>
+                    <li class="technics">
+                        <h3>Техника</h3>
+                        <a class="goods-btn" href="#">Для стройки</a>
+                    </li>
+                    <li class="discounts">
+                        <h3>Скидки</h3>
+                        <a class="goods-btn" href="#">На 350 товаров</a>
+                    </li>
+                    <li class="delivery">
+                        <h3>Доставка</h3>
+                        <a class="goods-btn" href="#">Бесплатно</a>
+                    </li>
+                    <li class="slider">
+                        <figure class="slider-content">
+                            <h2>Перфораторы</h2>
+                            <p>Настоящие мужские игрушки</p>
+                            <a class="button" href="#">Открыть каталог</a>
+                        </figure>
+                        <span class="slider-button-back">
+                            Назад
+                        </span>
+                        <span class="slider-button-next">
+                            Вперед
+                        </span>
+                    </li>
+                </ul>
+<!--            <section class="materials">
                     <h3>Материалы</h3>
                     <a class="goods-btn" href="#">На любой вкус</a>
                 </section>
@@ -77,7 +115,7 @@
                     <span class="slider-button-next">
                         Вперед
                     </span>
-                </section>
+                </section> -->
             </section>
             <section class="popular-goods">
                 <header class="popular-header">
@@ -87,29 +125,99 @@
                 <ul class="popular-goods-list">
                     <li class="popular-goods-item">
                         <a href="#">
-                            <img src="img/puncher1.png" width="184" height="164">
+                            <img src="http://placehold.it/150x100" width="150" height="100">
                             <p>Перфоратор BOSCH BFG 9000</p>
                         </a>
                     </li>
                     <li class="popular-goods-item">
                         <a href="#">
-                            <img src="img/puncher2.png" width="127" height="112">
+                            <img src="http://placehold.it/150x100" width="150" height="100">
                             <p>Перфоратор BOSCH BFG 3000</p>
                         </a>
                     </li>
                     <li class="popular-goods-item">
                         <a href="#">
-                            <img src="img/puncher3.png" width="144" height="128">
+                            <img src="http://placehold.it/150x100" width="150" height="100">
                             <p>Перфоратор BOSCHBFG 6000</p>
                         </a>
                     </li>
                     <li class="popular-goods-item">
                         <a href="#">
-                            <img src="img/puncher2.png" width="127" height="112">
+                            <img src="http://placehold.it/150x100" width="150" height="100">
                             <p>Перфоратор BOSCH BFG 2000</p>
                         </a>
                     </li>
             </section>
+            <section class="popular-brands">
+                <header class="popular-header">
+                    <h2>Популярные производители</h2>
+                    <a class="button" href="#">Все производители</a>
+                </header>
+                <ul class="popular-brands-list">
+                    <li class="popular-brands-item">
+                        <a href="#">
+                            <img src="http://placehold.it/150x100" width="150" height="100" alt="Bosch">
+                        </a>
+                    </li>
+                    <li class="popular-brands-item">
+                        <a href="#">
+                            <img src="http://placehold.it/150x100" width="150" height="100" alt="Makita">
+                        </a>
+                    </li>
+                    <li class="popular-brands-item">
+                        <a href="#">
+                            <img src="http://placehold.it/150x100" width="150" height="100" alt="DeWALT">
+                        </a>
+                    </li>
+                    <li class="popular-brands-item">
+                        <a href="#">
+                            <img src="http://placehold.it/150x100" width="150" height="100" alt="Интерскол">
+                        </a>
+                    </li>
+                    <li class="popular-brands-item">
+                        <a href="#">
+                            <img src="http://placehold.it/150x100" width="150" height="100" alt="HITACHI">
+                        </a>
+                    </li>
+                    <li class="popular-brands-item">
+                        <a href="#">
+                            <img src="http://placehold.it/150x100" width="150" height="100" alt="LG">
+                        </a>
+                    </li>
+                    <li class="popular-brands-item">
+                        <a href="#">
+                            <img src="http://placehold.it/150x100" width="150" height="100" alt="AEG">
+                        </a>
+                    </li>
+                    <li class="popular-brands-item">
+                        <a href="#">
+                            <img src="http://placehold.it/150x100" width="150" height="100" alt="Metabo">
+                        </a>
+                    </li>
+            </section>
+            <!--Размечаем блок "СЕРВИСЫ". Вопрос: размечаем содержание всех трех преимуществ, а после содержание неактивных преимуществ скрываем в CSS с помощью display:none?-->
+            <section class="features">
+                <h2 class="desc-title">Сервисы</h2>
+                <p class="section-desc">Хороший интернет-магазин отличается от плохого не только ценами! Мы стараемся изо всех сил сделать покупки приятными.</p>
+                <ul class="features-list">
+                    <li class="features-item">Доставка</li>
+                    <li class="features-item">Гарантия</li>
+                    <li class="features-item">Кредит</li>
+                </ul>
+                <section class="features-item delivery-feature">
+                    <h2 class="feature-title">Доставка</h2>
+                    <p class="section-desc">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж!</p>
+                </section>
+                <section class="features-item warranty-feature">
+                    <h2 class="feature-title">Гарантия</h2>
+                    <p class="section-desc">Если купленный у нас товар поломается или заискрит, а также в случае пожара, спровоцированного его возгаранием, вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый. Дом уж восстановите как-нибудь сами.</p>
+                </section>
+                <section class="features-item credit-feature">
+                    <h2 class="feature-title">Кредит</h2>
+                    <p class="section-desc">Залезть в долговую яму стало проще! Кредитные консультанты придут вам на помощь.</p>
+                </section>
+            </section>
+
         </main>
     </body>
 </html>
