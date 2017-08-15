@@ -1,3 +1,69 @@
 body {
     background-color: #ffffff;
 }
+
+.header-top {
+    background-color: #33445a;
+}
+
+.container {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header-top-navigation {
+    display: inline-block;
+    list-style: none;
+}
+
+.header-top-navigation > li {
+    display: inline-block;
+}
+
+.header-top-navigation > li > a {
+    color: white;
+    text-decoration: none;
+}
+
+.header-bottom {
+    background-color: #f3f7f8;
+}
+
+.user-navigation {
+    list-style: none;
+}
+
+.user-navigation > li > a {
+    color: #000000;
+    text-decoration: none;
+}
+
+.main-navigation {
+    background-color: #33445a;
+}
+
+.site-navigation {
+    list-style: none;
+}
+
+.site-navigation > li > a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+main.page-content {
+    background-color: #ffffff;
+}
+
+section.service {
+    background-color: #f4f8f9;
+}
+
+footer.main-footer {
+    background-color: #3d546e;
+}
+
+section.footer-bottom {
+    background-color: #33445b;
+}
