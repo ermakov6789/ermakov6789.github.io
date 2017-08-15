@@ -103,11 +103,13 @@
                                 Аккумуляторные
                             </li>
                             <li class="filter-option">
-                                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group" value="network" >
+                                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group" value="network">
                                 Сетевые
                             </li>
+                        </ul>
                     </fieldset>
                     <button type="submit" class="filter-button">Показать</button>
+                </form>
             </section>
             <section class="catalog">
                 <h2 class="visully-hidden">Каталог</h2>
@@ -192,7 +194,7 @@
             </article>
         </main>
         <footer class="main-footer">
-            <section class="footer-top">
+            <div class="footer-top">
                 <div class="container">
                     <a class="footer-logo" href="index.html">
                         <img src="logo-footer.png" alt="Логотип Техномарт">
@@ -207,8 +209,8 @@
                         </ul>
                     </nav>
                 </div>
-            </section>
-            <section class="footer-middle">
+            </div>
+            <div class="footer-middle">
                 <div class="container">
                     <p class="footer-middle-contacts">
                         г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
@@ -223,8 +225,8 @@
                         </ul>
                     </nav>
                 </div>
-            </section>
-            <section class="footer-bottom">
+            </div>
+            <div class="footer-bottom">
                 <div class="container">
                     <p class="footer-copyright">© 2010-2017 Компания «Техномарт»<br>
                     Все права защищены</p>
@@ -242,22 +244,25 @@
                         <a href="https://htmlacademy.ru" class="developers-contact" target="_blank">htmlacademy.ru</a>
                     </p>
                 </div>
-            </section>
+            </div>
         </footer>
         <section class="modal modal-feedback">
             <h2 class="visually-hidden">Обратная связь</h2>
             <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
                 <section class="feedback-form-group">
+                    <h2 class="visually-hidden">Введите ваше имя</h2>
                     <label for="name">Ваше имя:</label>
                     <input class="user-name" type="text" name="name" id="name" placeholder="Представьтесь, пожалуйста">
                 </section>
                 <section class="feedback-form-group">
+                    <h2 class="visually-hidden">Введите ваш e-mail</h2>
                     <label for="email">Ваш e-mail:</label>
                     <input class="user-email" type="email" name="email" id="email" placeholder="Для отправки ответа">
                 </section>
                 <section class="feedback-form-group">
+                    <h2 class="visually-hidden">Введите ваше обращение</h2>
                     <label for="user-message">Текст письма:</label>
-                    <textarea name="user-message" id="message" placeholder="В свободной форме"></textarea>
+                    <textarea name="user-message" id="user-message" placeholder="В свободной форме"></textarea>
                 </section>
                 <button class="button" type="submit">Войти</button>
             </form>
