@@ -60,10 +60,10 @@ section.service {
     background-color: #f4f8f9;
 }
 
-footer.main-footer {
+div.footer-top {
     background-color: #3d546e;
 }
 
-section.footer-bottom {
+div.footer-bottom {
     background-color: #33445b;
 }
