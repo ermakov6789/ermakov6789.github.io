@@ -1,0 +1,67 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2em;
+    margin: 0.5em;
+    padding: 0;
+}
+
+div.container {
+    max-width: 40em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+ul.portfolio-list {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+
+}
+
+ul.portfolio-list li {
+    display: inline-flex;
+    width: 49%;
+    min-height: 10em;
+    border: 1px solid grey;
+    border-radius: 20px;
+    box-shadow: 0 0.3em 0.5em rgba(0,0,0,0.5);
+    margin: 0;
+    margin-bottom: 0.3em;
+    background-color: #fff;
+}
+
+a.link {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    padding: 0.5em;
+    margin: 0;
+    text-align: left;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.7);
+    text-decoration: none;
+    border-radius: 20px 20px 0 0;
+}
+
+.barbershop, .technomart, .device, .sedona {
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.portfolio-list li.barbershop {
+    background-image: url('../img/barbershop.png');
+
+}
+
+.portfolio-list li.technomart {
+    background-image: url('../img/technomart.png');
+}
+
+.portfolio-list li.device {
+    background-image: url('../img/device.png');
+}
+
+.portfolio-list li.sedona {
+    background-image: url('../img/sedona.png');
+}
