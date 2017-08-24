@@ -50,18 +50,23 @@ a.link {
 }
 
 .portfolio-list li.barbershop {
-    background-image: url('../img/barbershop.png');
+    background-image: url('../img/barbershop.jpg');
 
 }
 
 .portfolio-list li.technomart {
-    background-image: url('../img/technomart.png');
+    background-image: url('../img/technomart.jpg');
 }
 
 .portfolio-list li.device {
-    background-image: url('../img/device.png');
+    background-image: url('../img/device.jpg');
 }
 
 .portfolio-list li.sedona {
-    background-image: url('../img/sedona.png');
+    background-image: url('../img/sedona.jpg');
+}
+
+.page-footer > div > div {
+    display: inline-flex;
+    width: 32%;
 }

@@ -1,8 +1,20 @@
 body {
+    margin: 0;
+    padding: 0;
     background-color: #ffffff;
+    font-size: 13px;
+    line-height: 24px;
+    color: #000;
+    font-weight: 400;
+    font-family: 'PT Sans', sans-serif;
 }
 
-.header-top {
+.visually-hidden {
+    /*display: none;*/
+}
+
+.header-top,
+.main-navigation {
     background-color: #33445a;
 }
 
@@ -12,52 +24,125 @@ body {
     margin-right: auto;
 }
 
-.header-top-navigation {
-    display: inline-block;
-    list-style: none;
-}
-
-.header-top-navigation > li {
-    display: inline-block;
-}
-
-.header-top-navigation > li > a {
-    color: white;
-    text-decoration: none;
-}
-
 .header-bottom {
     background-color: #f3f7f8;
 }
 
-.user-navigation {
+.header-top-navigation,
+.user-navigation,
+.site-navigation,
+.footer-top-list,
+.footer-social-list {
     list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
-.user-navigation > li > a {
+.header-top-navigation li,
+.user-navigation li,
+.site-navigation li,
+.footer-top-list li,
+.footer-social-list li {
+    display: inline-block;
+}
+
+.user-navigation a {
     color: #000000;
     text-decoration: none;
 }
 
-.main-navigation {
-    background-color: #33445a;
-}
-
-.site-navigation {
-    list-style: none;
-}
-
-.site-navigation > li > a {
+.header-top-navigation a,
+.site-navigation a,
+.footer-social-list a {
     color: #ffffff;
     text-decoration: none;
 }
 
-main.page-content {
+.footer-top-list a,
+.developers a {
+    color: #ffda96;
+    text-decoration: none;
+}
+
+.page-content {
     background-color: #ffffff;
+}
+
+.page-content h1,
+.page-content h2 {
+    font-size: 30px;
+    line-height: 30px;
+    color: #3d546e;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-family: 'Cuprum', sans-serif;
+}
+
+.goods-and-services .materials {
+    background-color: #ffbf47;
+}
+
+.goods-and-services .tool {
+    background-color: #3bbce3;
+}
+
+.goods-and-services .technics {
+    background-color: #dc91d8;
+}
+
+.goods-and-services .discounts {
+    background-color: #8ed78f;
+}
+
+.goods-and-services .delivery {
+    background-color: #ffc047;
+}
+
+.goods-and-services .slider {
+    background-color: #d0c0ae;
+}
+
+.goods-and-services h3 {
+    font-size: 24px;
+    line-height: 30px;
+    color: #fff;
+    font-weight: 700;
+    font-family: 'Cuprum', sans-serif;
+}
+
+.slider h2 {
+    font-size: 36px;
+    line-height: 30px;
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: 'Cuprum', sans-serif;
+}
+
+.popular-header, .brands-header {
+    background-color: #f9f5f0;
 }
 
 section.service {
     background-color: #f4f8f9;
+}
+
+.page-content .desc-title {
+    font-size: 30px;
+    line-height: 24px;
+    color: #000;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-family: 'Cuprum', sans-serif;
+}
+
+.service .service-title {
+    font-size: 36px;
+    line-height: 24px;
+    color: #3d546e;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-family: 'Cuprum', sans-serif;
 }
 
 div.footer-top {

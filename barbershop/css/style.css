@@ -1,1 +1,28 @@
+body {
+    font-size: 14px;
+    line-height: 24px;
+    color: #000;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: 'PT Sans Narrow', sans-serif;
+}
 
+h2,
+.page-title,
+.feature-item h3 {
+    font-size: 30px;
+    line-height: 42px;
+    color: #000;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: 'PT Sans Narrow', sans-serif;
+}
+
+.modal h2 {
+    font-size: 30px;
+    line-height: 1.2em;
+    color: #000;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: 'PT Sans Narrow', sans-serif;
+}
