@@ -1,133 +1,15 @@
-body {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 20px;
-    margin: 15px;
-    padding: 0;
-}
-
-.page-header {}
-
-.container {
-    width: 940px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.page-title {}
-
-.page-content {}
-
-.portfolio {}
-
-.portfolio-list,
-.portfolio-screens {
+.portfolio-list {
+    display: flex;
     list-style: none;
-    margin: 0;
     padding: 0;
 }
 
-.portfolio-list .item {
-    position: relative;
-    height: 420px;
-    margin-bottom: 20px;
+.item {
+    width: 50%;
+    border: 1px solid #e5e5e5;
 }
 
-.screen {
-    display: inline-flex;
-    position: absolute;
-}
-
-.barbershop-index {
-    background: url("../img/barbershop.png") no-repeat 50% 0;
-}
-
-.barbershop-catalog {
-    background: url("../img/barbershop.png") no-repeat 50% 0;
-}
-
-.barbershop-product {
-    background: url("../img/barbershop.png") no-repeat 50% 0;
-}
-
-.technomart-index {
-    background: url("../img/technomart.png") no-repeat 50% 0;
-}
-
-.technomart-catalog {
-    background: url("../img/technomart.png") no-repeat 50% 0;
-}
-
-.technomart-product {
-    background: url("../img/technomart.png") no-repeat 50% 0;
-}
-
-.big-screen {
-    left: 0;
-    top: 0;
-    width: 600px;
-    height: 100%;
-    border-radius: 5px;
-    background-size: 100% auto;
-}
-
-.small-screen-top {
-    right: 0;
-    top: 0;
-    width: 335px;
-    height: 207px;
-    border-radius: 5px;
-    background-size: 100% auto;
-}
-
-.small-screen-bottom {
-    right: 0;
-    bottom: 0;
-    width: 335px;
-    height: 207px;
-    border-radius: 5px;
-    background-size: 100% auto;
-}
-
-.link {
-    text-decoration: none;
-    color: #fff;
-    width: 100%;
-    height: 100%;
-}
-
-.first-block, .second-block {
-    display: none;
-
-}
-
-.link .desc-title,
-.link .desc {
-    text-align: center;
-
-}
-
-.screen:hover .first-block {
-    display: flex;
-    background-color: rgba(0, 0, 0, 0.85);
-    box-shadow: -5px 0px 10px rgba(0, 0, 0, 0.5);
-    width: 100%;
-    height: 100%;
-    border-radius: 5px;
-}
-
-.screen:active .first-block {
-    box-shadow: -4px 0px 4px rgba(0, 0, 0, 0.3);
-}
-
-.screen:hover .second-block {
-    display: flex;
-    background-color: rgba(0, 0, 0, 0.85);
-    box-shadow: 5px 0px 10px rgba(0, 0, 0, 0.5);
-    width: 100%;
-    height: 100%;
-    border-radius: 5px;
-}
-
-.screen:active .second-block {
-    box-shadow: 4px 0px 4px rgba(0, 0, 0, 0.3);
-}
+@media screen and (max-width : 480px) {
+    .portfolio-list {flex-direction: column;}
+    .item {width: auto;}
+   }
