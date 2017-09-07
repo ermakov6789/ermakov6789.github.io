@@ -42,6 +42,7 @@ a {
 }
 
 .header-logo {
+    width: 220px;
     background-color: #ff5357;
     box-shadow: 0px -5px 0px 0px rgba(0, 0, 0, 0.24) inset;
 }
@@ -56,6 +57,8 @@ a {
 }
 
 .header-logo img {
+    margin-left: 55px;
+    margin-top: 9px;
     width: 110px;
     height: 18px;
 }
@@ -203,6 +206,11 @@ fieldset ul,
     opacity: 0.3;
 }
 
+.user-panel {
+    width: 300px;
+    margin-left: auto;
+}
+
 .user-profile {
     background-color: #ffffff;
 }
@@ -220,6 +228,10 @@ fieldset ul,
 
 .user-profile a:active {
     opacity: 0.3;
+}
+
+.user-panel-list li {
+    display: inline-block;
 }
 
 .user-panel-list a {
@@ -251,12 +263,9 @@ fieldset ul,
 
 .site-navigation a {
     display: inline-block;
-    padding: 20px;
+    padding: 20px 30px;
+
     color: #ffffff;
-
-}
-
-.site-navigation a {
     font-size: 17px;
     line-height: 120%;
 }
@@ -736,12 +745,15 @@ body .button:active {
     color: #000000;
 }
 
-.catalog-header .breadcrumbs {
-
+.catalog-header .container {
+    display: flex;
+    flex-direction: column;
 }
 
 .breadcrumbs,
 .content-header {
+    padding: 0;
+    margin: 0;
     font-family: "PT Sans", "Tahoma", "Arial", sans-serif;
     font-size: 13px;
     font-weight: 400;
@@ -768,7 +780,16 @@ body .button:active {
     height: 12px;
 }
 
+.catalog-header li {
+    display: inline-block;
+    padding: 15px 23px;
+}
+
 .page-content .page-title {
+    margin: 0;
+    padding: 32px 25px;
+    margin-bottom: 20px;
+
     font-size: 30px;
     font-weight: 400;
     line-height: 30px;
@@ -779,15 +800,26 @@ body .button:active {
     background-color: #f2f6f8;
 }
 
+.catalog-content .container {
+    display: flex;
+    justify-content: space-between;
+}
+
 .filters {
+    width: 220px;
     font-family: "PT Sans", "Tahoma", "Arial", sans-serif;
 }
 
 .content-header {
+    margin: 0;
+    padding: 13px 19px;
     background-color: #f7f3ec;
 }
 
 .filter fieldset {
+    padding: 0;
+    margin: 0;
+
     border: 0;
     border-bottom: 1px solid #e5e5e5;
 }
@@ -842,12 +874,48 @@ body .button:active {
     outline: 0;
 }
 
+.catalog {
+    width: 700px;
+}
+
+.catalog .popular-list {
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.catalog .popular-list li {
+    margin-bottom: 20px;
+}
+
+.catalog .popular-list li:last-child {
+    margin-bottom: 53px;
+}
+
+.pagination-list {
+    margin-bottom: 60px;
+}
+
+.pagination-list li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
 .pagination-item a {
+    display: block;
+    width: 38px;
+    height: 38px;
+
     color: #000;
+    line-height: 38px;
+    text-align: center;
+    text-transform: uppercase;
+
     border: 1px solid #e5e5e5;
     border-radius: 3px;
+}
 
-    text-transform: uppercase;
+.pagination-item-next a {
+    width: 140px;
 }
 
 .pagination-item a:hover,
@@ -868,6 +936,16 @@ body .button:active {
 
 .theory {
     background-color: #f2f6f8;
+}
+
+.theory .container {
+    padding: 65px 0;
+}
+
+.theory .section-desc {
+    padding: 0;
+    margin: 0;
+    margin-top: 35px;
 }
 
 .footer-wrapper {
@@ -1032,8 +1110,53 @@ body .button:active {
     text-decoration: none;
 }
 
+.feedback-form {
+    width: 620px;
+    min-height: 430px;
+    margin: auto;
+    border-top: 7px solid #ff5357;
+}
+
+.feedback-contacts-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 80px;
+    margin-right: 80px;
+    padding-top: 53px;
+}
+
+.feedback-message-wrapper {
+    display: flex;
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-top: 20px;
+}
+
+.feedback-button-wrapper {
+    display: flex;
+    margin: 0 auto;
+    margin-top: 37px;
+
+    width: 460px;
+}
+
+.modal-feedback .button {
+    width: 100%;
+}
+
+.feedback-form-group {
+    width: 220px;
+}
+
+.feedback-form-group label {
+    display: block;
+    margin-bottom: 10px;
+}
+
 .feedback-form-group input,
 .feedback-form-group textarea {
+    padding: 9px 15px;
+
     font-family: "PT Sans", "Tahoma", "Arial", sans-serif;
     font-size: 13px;
     font-weight: 400;
@@ -1041,6 +1164,17 @@ body .button:active {
 
     border: 2px solid #d7dcde;
     border-radius: 3px;
+    box-sizing: border-box;
+}
+
+.feedback-form-group input {
+    width: 100%;
+}
+
+.feedback-form-group textarea {
+    width: 460px;
+    height: 110px;
+    resize: none;
 }
 
 .modal-close {

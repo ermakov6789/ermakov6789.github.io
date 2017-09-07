@@ -342,19 +342,25 @@
         <section class="modal modal-feedback">
             <h2 class="visually-hidden">Обратная связь</h2>
             <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
-                <div class="feedback-form-group">
-                    <label for="name">Ваше имя:</label>
-                    <input class="user-name" type="text" name="name" id="name" placeholder="Представьтесь, пожалуйста">
+                <div class="feedback-contacts-wrapper">
+                    <div class="feedback-form-group">
+                        <label for="name">Ваше имя:</label>
+                        <input class="user-name" type="text" name="name" id="name" placeholder="Представьтесь, пожалуйста">
+                    </div>
+                    <div class="feedback-form-group">
+                        <label for="email">Ваш e-mail:</label>
+                        <input class="user-email" type="email" name="email" id="email" placeholder="Для отправки ответа">
+                    </div>
                 </div>
-                <div class="feedback-form-group">
-                    <label for="email">Ваш e-mail:</label>
-                    <input class="user-email" type="email" name="email" id="email" placeholder="Для отправки ответа">
+                <div class="feedback-message-wrapper">
+                    <div class="feedback-form-group">
+                        <label for="user-message">Текст письма:</label>
+                        <textarea name="user-message" id="user-message" placeholder="В свободной форме"></textarea>
+                    </div>
                 </div>
-                <div class="feedback-form-group">
-                    <label for="user-message">Текст письма:</label>
-                    <textarea name="user-message" id="user-message" placeholder="В свободной форме"></textarea>
+                <div class="feedback-button-wrapper">
+                    <button class="button" type="submit">Отправить</button>
                 </div>
-                <button class="button" type="submit">Отправить</button>
             </form>
             <button class="modal-close" type="button">Закрыть</button>
         </section>
