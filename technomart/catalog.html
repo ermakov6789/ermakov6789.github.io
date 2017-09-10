@@ -15,9 +15,9 @@
                     <a class="header-logo" href="index.html">
                         <img src="img/index-logo.png" width="110" height="18" alt="Логотип Техномарт">
                     </a>
-                    <form class="header-search" action="https://echo.htmlacademy.ru" method="post">
-                        <label class="visually-hidden" for="header-search">Поиск</label>
-                        <input type="search" name="search" value="" id="header-search" placeholder="Поиск:">
+                    <form class="header-search" action="https://echo.htmlacademy.ru" method="post" autocomplete="off">
+                        <input type="search" name="search" value="" id="search" placeholder="Поиск:">
+                        <label for="search"></label>
                     </form>
                     <ul class="header-top-navigation">
                         <li class="bookmarks-link"><a href="#">Закладки: 0</a></li>
@@ -43,7 +43,6 @@
                         </ul>
                         <ul class="user-panel-list">
                             <li class="my-order-link"><a href="#">Мои заказы</a></li>
-                            <li>*</li>
                             <li class="personal-link"><a href="#">Личный кабинет</a></li>
                         </ul>
                     </div>
@@ -79,49 +78,49 @@
                         <h2 class="visually-hidden">Фильтр товаров</h2>
                         <p class="content-header">Фильтр:</p>
                         <form class="filter" method="get" action="https://echo.htmlacademy.ru">
-                            <fieldset>
+                            <fieldset class="range-filter">
                                 <legend>Цена:</legend>
-                                <div class="range">
-                                    (диапазон цен)
+
+                                <div class="range-controls">
+                                    <div class="scale">
+                                        <div class="bar"></div>
+                                    </div>
+                                    <div class="toggle toggle-min"></div>
+                                    <div class="toggle toggle-max"></div>
                                 </div>
-                                <label class="visually-hidden" for="min-price-range"></label>
-                                <input type="number" name="min-price" id="min-price-range" min="0" step="1" value="0">
-                                <span>—</span>
-                                <label class="visually-hidden" for="max-price-range"></label>
-                                <input type="number" name="max-price" id="max-price-range" min="0" step="1" value="30000">
+
+                                <div class="price-controls">
+                                    <label class="min-price">
+                                        <input type="number" name="min-price" id="min-price-range" min="0" step="1" value="0">
+                                    </label>
+                                    <span>—</span>
+                                    <label class="max-price">
+                                        <input type="number" name="max-price" id="max-price-range" min="0" step="1" value="30000">
+                                    </label>
+                                </div>
                             </fieldset>
                             <fieldset>
                                 <legend>Производители:</legend>
                                 <ul>
                                     <li class="filter-option">
-                                        <label>
-                                            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="bosch" checked>
-                                            Bosch
-                                        </label>
+                                        <input class="visually-hidden checkbox" type="checkbox" name="bosch" id="bosch" checked>
+                                        <label class="producers" for="bosch">Bosch</label>
                                     </li>
                                     <li class="filter-option">
-                                        <label>
-                                            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="interskol">
-                                            Интерскол
-                                        </label>
+                                        <input class="visually-hidden checkbox" type="checkbox" name="interskol" id="interskol">
+                                        <label class="producers" for="interskol">Интерскол</label>
                                     </li>
                                     <li class="filter-option">
-                                        <label>
-                                            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="makita" checked>
-                                            Makita
-                                        </label>
+                                        <input class="visually-hidden checkbox" type="checkbox" name="makita" id="makita" checked>
+                                        <label class="producers" for="makita">Makita</label>
                                     </li>
                                     <li class="filter-option">
-                                        <label>
-                                            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="dewalt">
-                                            Dewalt
-                                        </label>
+                                        <input class="visually-hidden checkbox" type="checkbox" name="dewalt" id="dewalt">
+                                        <label class="producers" for="dewalt">Dewalt</label>
                                     </li>
                                     <li class="filter-option">
-                                        <label>
-                                            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="Hitachi">
-                                            Hitachi
-                                        </label>
+                                        <input class="visually-hidden checkbox" type="checkbox" name="hitachi" id="hitachi">
+                                        <label class="producers" for="hitachi">Hitachi</label>
                                     </li>
                                 </ul>
                             </fieldset>
@@ -129,16 +128,12 @@
                                 <legend>Питание:</legend>
                                 <ul>
                                     <li class="filter-option">
-                                        <label>
-                                            <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group" value="rechargeable" checked>
-                                            Аккумуляторные
-                                        </label>
+                                        <input class="visually-hidden radio" type="radio" name="product-group" id="rechargeable" value="rechargeable">
+                                        <label class="power" for="rechargeable">Аккумуляторные</label>
                                     </li>
                                     <li class="filter-option">
-                                        <label>
-                                            <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group" value="network">
-                                            Сетевые
-                                        </label>
+                                        <input class="visually-hidden radio" type="radio" name="product-group" id="network" value="network">
+                                        <label class="power" for="network">Сетевые</label>
                                     </li>
                                 </ul>
                             </fieldset>
