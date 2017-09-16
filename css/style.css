@@ -1,28 +1,157 @@
 body {
     padding: 0;
     margin: 0;
+    background-image: url("../img/3.jpg");
+    background-repeat: repeat;
+    background-attachment: fixed;
+}
+
+.page-header {
+    display: flex;
+    height: 100px;
+    margin-bottom: 20px;
+
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.page-title {
+    margin: auto;
+    padding: 0;
+
+    color: #ffffff;
 }
 
 .portfolio-list {
     display: flex;
     justify-content: space-around;
-    list-style: none;
+    flex-wrap: wrap;
+    margin: 0;
     padding: 0;
+
+    list-style: none;
+}
+
+.portfolio-list h2,
+.portfolio-list h3,
+.portfolio-list p {
+    padding: 0;
+    margin: 0;
+}
+
+
+
+.barbershop {
+    background-color: #ffffff;
+    background-image: url("../img/barbershop.jpg");
+}
+
+.technomart {
+    background-color: #ffffff;
+    background-image: url("../img/technomart.jpg");
+}
+
+.sedona {
+    background-color: #ffffff;
+    background-image: url("../img/sedona.jpg");
+}
+
+.nerds {
+    background-color: #ffffff;
+    background-image: url("../img/nerds.jpg");
+}
+
+.glacy {
+    background-color: #ffffff;
+    background-image: url("../img/glacy.jpg");
+}
+
+.device {
+    background-color: #ffffff;
+    background-image: url("../img/device.jpg");
 }
 
 .item {
-    width: 43%;
-    background-color: #e5e5e5;
-    padding: 1%;
+    min-width: 340px;
+    width: 30%;
+    max-width: 450px;
+    height: 221px;
+    margin: 0;
+    margin-bottom: 10px;
+    padding: 0;
+
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: 100%;
+    border-radius: 5px;
+}
+
+.pages-list {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+
+.pages-list li {
+    margin: auto;
+}
+
+.pages-list h2 {
+    color: transparent;
+}
+
+.pages-list a {
+    display: block;
+    width: 220px;
+    height: 40px;
+
+    color: transparent;
+    text-decoration: none;
+    text-align: center;
+    border: 1px solid transparent;
+    border-radius: 5px;
+}
+
+.item:hover .pages-list h2 {
+    color: #ffffff;
+}
+
+.item:hover .pages-list a,
+.pages-list a:focus {
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.item:hover .pages-list {
+    height: 100%;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 5px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.pages-list a:hover {
+    box-shadow: 3px 3px 10px rgba(255, 255, 255, 0.3);
+}
+
+.pages-list a:active {
+    opacity: 0.6;
 }
 
 @media screen and (max-width : 480px) {
     .portfolio-list {
         flex-direction: column;
-        justify-content: space-around;
+        align-items: center;
     }
+
     .item {
-        width: auto;
-        margin-bottom: 1%;
+        flex-grow: 2;
+        min-width: 310px;
+        height: 202px;
+        margin: 0;
+        margin-bottom: 10px;
     }
 }
