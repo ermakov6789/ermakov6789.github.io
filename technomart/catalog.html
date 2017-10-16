@@ -49,7 +49,7 @@
                 </div>
                 <div class="container">
                     <ul class="site-navigation">
-                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="index.html" class="outline">Главная</a></li>
                         <li><a href="#">Компания</a></li>
                         <li><a href="#">Каталог</a></li>
                         <li><a href="#">Новости</a></li>
@@ -80,7 +80,6 @@
                         <form class="filter" method="get" action="https://echo.htmlacademy.ru">
                             <fieldset class="range-filter">
                                 <legend>Цена:</legend>
-
                                 <div class="range-controls">
                                     <div class="scale">
                                         <div class="bar"></div>
@@ -88,7 +87,6 @@
                                     <div class="toggle toggle-min"></div>
                                     <div class="toggle toggle-max"></div>
                                 </div>
-
                                 <div class="price-controls">
                                     <label class="min-price">
                                         <input type="number" name="min-price" id="min-price-range" min="0" step="1" value="0">
@@ -107,7 +105,7 @@
                                         <label class="producers" for="bosch">Bosch</label>
                                     </li>
                                     <li class="filter-option">
-                                        <input class="visually-hidden checkbox" type="checkbox" name="interskol" id="interskol">
+                                        <input class="visually-hidden checkbox" type="checkbox" name="interskol" id="interskol" disabled checked>
                                         <label class="producers" for="interskol">Интерскол</label>
                                     </li>
                                     <li class="filter-option">
@@ -128,7 +126,7 @@
                                 <legend>Питание:</legend>
                                 <ul>
                                     <li class="filter-option">
-                                        <input class="visually-hidden radio" type="radio" name="product-group" id="rechargeable" value="rechargeable">
+                                        <input class="visually-hidden radio" type="radio" name="product-group" id="rechargeable" value="rechargeable" checked>
                                         <label class="power" for="rechargeable">Аккумуляторные</label>
                                     </li>
                                     <li class="filter-option">
@@ -143,7 +141,16 @@
                     <section class="catalog">
                         <h2 class="visually-hidden">Каталог</h2>
                         <div class="content-header">
-                            Сортировка:
+                            <div>Сортировка:</div>
+                            <ul class="sort-list">
+                                <li><a class="active" href="#">По цене</a></li>
+                                <li><a href="#">По типу</a></li>
+                                <li><a href="#">По функционалу</a></li>
+                            </ul>
+                            <ul class="sort-list-decrease">
+                                <li><a class="sort-up" href="#">По возрастанию</a></li>
+                                <li><a class="sort-down" href="#">По убыванию</a></li>
+                            </ul>
                         </div>
                         <ul class="popular-list">
                             <li>
@@ -156,7 +163,7 @@
                                 </div>
                                 <p><span>Перфоратор</span> bosch bfg 9000</p>
                                 <p class="product-price old-price">32500 р.</p>
-                                <p class="product-price current-price">25500 р.</p>
+                                <div class="product-price current-price">25500 р.</div>
                             </li>
                             <li>
                                 <div class="product-image">
@@ -168,9 +175,10 @@
                                 </div>
                                 <p><span>Перфоратор</span> bosch bfg 3000</p>
                                 <p class="product-price old-price">22500 р.</p>
-                                <p class="product-price current-price">15500 р.</p>
+                                <div class="product-price current-price">15500 р.</div>
                             </li>
                             <li>
+                                <div class="flag flag-new">новинка</div>
                                 <div class="product-image">
                                     <img src="img/snippet-3.jpg" width="220" height="150" alt="Перфоратор bosch bfg 6000">
                                 </div>
@@ -180,7 +188,7 @@
                                 </div>
                                 <p><span>Перфоратор</span> bosch bfg 6000</p>
                                 <p class="product-price old-price">30500 р.</p>
-                                <p class="product-price current-price">25500 р.</p>
+                                <div class="product-price current-price">25500 р.</div>
                             </li>
                             <li>
                                 <div class="product-image">
@@ -192,9 +200,10 @@
                                 </div>
                                 <p><span>Перфоратор</span> bosch bfg 9000</p>
                                 <p class="product-price old-price">32500 р.</p>
-                                <p class="product-price current-price">25500 р.</p>
+                                <div class="product-price current-price">25500 р.</div>
                             </li>
                             <li>
+                                <div class="flag flag-new">новинка</div>
                                 <div class="product-image">
                                     <img src="img/snippet-2.jpg" width="220" height="150" alt="Перфоратор bosch bfg 3000">
                                 </div>
@@ -204,7 +213,7 @@
                                 </div>
                                 <p><span>Перфоратор</span> bosch bfg 3000</p>
                                 <p class="product-price old-price">22500 р.</p>
-                                <p class="product-price current-price">15500 р.</p>
+                                <div class="product-price current-price">15500 р.</div>
                             </li>
                             <li>
                                 <div class="product-image">
@@ -216,9 +225,10 @@
                                 </div>
                                 <p><span>Перфоратор</span> bosch bfg 6000</p>
                                 <p class="product-price old-price">30500 р.</p>
-                                <p class="product-price current-price">25500 р.</p>
+                                <div class="product-price current-price">25500 р.</div>
                             </li>
                             <li>
+                                <div class="flag flag-new">новинка</div>
                                 <div class="product-image">
                                     <img src="img/snippet-1.jpg" width="220" height="150" alt="Перфоратор bosch bfg 9000">
                                 </div>
@@ -228,7 +238,7 @@
                                 </div>
                                 <p><span>Перфоратор</span> bosch bfg 9000</p>
                                 <p class="product-price old-price">32500 р.</p>
-                                <p class="product-price current-price">25500 р.</p>
+                                <div class="product-price current-price">25500 р.</div>
                             </li>
                             <li>
                                 <div class="product-image">
@@ -240,7 +250,7 @@
                                 </div>
                                 <p><span>Перфоратор</span> bosch bfg 3000</p>
                                 <p class="product-price old-price">22500 р.</p>
-                                <p class="product-price current-price">15500 р.</p>
+                                <div class="product-price current-price">15500 р.</div>
                             </li>
                             <li>
                                 <div class="product-image">
@@ -252,7 +262,7 @@
                                 </div>
                                 <p><span>Перфоратор</span> bosch bfg 6000</p>
                                 <p class="product-price old-price">30500 р.</p>
-                                <p class="product-price current-price">25500 р.</p>
+                                <div class="product-price current-price">25500 р.</div>
                             </li>
                         </ul>
                         <ul class="pagination-list">
@@ -339,11 +349,11 @@
                 <div class="feedback-contacts-wrapper">
                     <div class="feedback-form-group">
                         <label for="name">Ваше имя:</label>
-                        <input class="user-name" type="text" name="name" id="name" placeholder="Представьтесь, пожалуйста">
+                        <input type="text" name="name" id="name" placeholder="Представьтесь, пожалуйста">
                     </div>
                     <div class="feedback-form-group">
                         <label for="email">Ваш e-mail:</label>
-                        <input class="user-email" type="email" name="email" id="email" placeholder="Для отправки ответа">
+                        <input type="email" name="email" id="email" placeholder="Для отправки ответа">
                     </div>
                 </div>
                 <div class="feedback-message-wrapper">
@@ -352,8 +362,10 @@
                         <textarea name="user-message" id="user-message" placeholder="В свободной форме"></textarea>
                     </div>
                 </div>
-                <div class="feedback-button-wrapper">
-                    <button class="button" type="submit">Отправить</button>
+                <div class="feedback-bottom">
+                    <div class="feedback-button-wrapper">
+                        <button class="button" type="submit">Отправить</button>
+                    </div>
                 </div>
             </form>
             <button class="modal-close" type="button">Закрыть</button>
@@ -363,7 +375,7 @@
             <button class="modal-close" type="button">Закрыть</button>
         </section>
         <section class="modal modal-cart">
-            <h2 class="modal-cart-title">Товар добавлен в корзину!</h2>
+            <h2>Товар добавлен в корзину!</h2>
             <button class="modal-close" type="button">Закрыть</button>
             <ul class="modal-cart-list">
                 <li><a class="button" href="#">Оформить заказ</a></li>
